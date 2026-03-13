@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --color-warm-bg: #f1f5f9; /* Darker Slate 100 for better contrast */
+  --color-olive: #3d402e;
+  --color-accent: #d4af37;
+  --color-cream: #ffffff;
+  --color-deep: #0f172a;
+}
+
+body {
+  @apply bg-warm-bg text-slate-900 antialiased;
+  background-image: radial-gradient(rgba(15, 23, 42, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.serif-italic {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
